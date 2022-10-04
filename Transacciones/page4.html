@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Transacciones</title>
+</head>
+<body>
+    <header >
+        <div class="container-fluid px-0">
+            <nav class="navbar navbar-expand-sm navbar-dark bg-black py-0 px-0">
+                <a class="navbar-brand" href="#"><img id="logo" src="https://fi.udec.cl/wp-content/themes/divi-child/img/udec.png"> &nbsp;</a>
+                <span class="v-line"></span>
+                <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="page1.html">Introducción</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page2.html">¿Qué es un microservicio?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page3.html">Microservicio vs monolítico</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page4.html">Transacciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page5.html">Desafios en la comunicación de microservicios</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="page6.html">Donde se ejecuta un microservicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page7.html">Patrones de microservicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page8.html">Autores</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container" id="container">
+        <div class="blog-post">
+            <center>
+                <h2 class="title">¿Qué son las Transacciones?</h2>  
+                <p class="text-start fs-5  fw-normal"  >Corresponden a una serie de acciones que deben ejecutarse exitosamente en una base de datos. Si una  de las operaciones falla, todos los pasos deben retroceder a su estado anterior para que la aplicación quede en su estado estable antiguo.</p>
+              
+                
+                <img src="http://www.oscarblancarteblog.com/wp-content/uploads/2014/09/twocommitsimplefail.png" alt="alternate text" style="width: 100%;" class="p-3">
+                
+                
+                <p class="text-start fs-5  fw-normal"  >Las transacciones poseen las siguientes propiedades:</p>
+                <ul>
+                    <li class="text-start fs-5  fw-normal">Atomicidad: La transacción ocurre completamente o no ocurre.</i>
+                    <li class="text-start fs-5  fw-normal">Consistencia: La base de datos debe ser consistente (es decir, el cambio solo ocurre si el nuevo estado es válido) antes y después de la transacción.</i>
+                    <li class="text-start fs-5  fw-normal">Ocurren múltiples transacciones independientemente sin interferencia.</i>
+                    <li class="text-start fs-5  fw-normal">Durabilidad: Los cambios de una transacción exitosa ocurren incluso si el sistema falla.</i>
+                </ul>
+                <p class="text-start fs-5  fw-normal" >Dentro de una transacción, un evento es un cambio de estado que le ocurre a una entidad, y un comando encapsula toda la información necesaria para ejecutar una acción o gatillar un evento futuro.</p>
+            </center>
+        </div>  
+    </div>
+    <div class="blog-post">
+        <a class="btn btn-danger" href="page3.html">Microservicio vs monolítico</a>
+        <a class="btn btn-success" href="page5.html">Desafios en la comunicación de microservicios</a>
+    </div>
+    
+    <div class="loading">
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
