@@ -52,50 +52,50 @@
     <div class="container" id="container">
         <div class="blog-post">
             <center>
-                <h2 class="title">Arquitectura monolítica</h2>
+                <h2 class="title"><b> Arquitectura </b> <b class="text-danger"> Monolítica </b></h2>
                 <p class="text-start fs-5  fw-normal">Una arquitectura monolítica corresponde a una arquitectura donde
-                    todos los procesos están estrechamente asociados y se ejecutan como un solo servicio.</p>
+                    <b class="text-dark"> todos </b> los procesos están estrechamente asociados y se ejecutan como <b class="text-danger"> un solo </b> servicio.</p>
                 <img src="https://d2m6ke2px6quvq.cloudfront.net/uploads/2020/09/11/3f3de3fc-f3a8-4cd1-81cd-518496f59141.jpg"
                     alt="alternate text" style="width: 100%;" class="p-3">
  
  
-                <h4 class="text-dark p-3">Ventajas y desventajas de la arquitectura</h4>
+                <h2 class="text-dark p-3"><b class="text-success">Ventajas</b> y <b class="text-danger">Desventajas</b> de la arquitectura</h2>
                 <table class="table table-striped  bg-white rounded">
                     <tr>
                         <td>
-                            Ventajas ✅
+                            <p class="text-center fs-5  fw-normal text-success"> Ventajas ✅</p>
                         </td>
                         <td>
-                            Desventajas ❌
+                            <p class="text-center fs-5  fw-normal text-danger"> Desventajas ❌</p>
                         </td>
                     </tr>
                     <tr>
-                        <td>
-                            Son más fáciles de desarrollar y desplegar, pues los componentes están centralizados
+                        <td >
+                           <p class="text-start fs-5  fw-normal">Son más fáciles de desarrollar y desplegar, pues los componentes están centralizados</p> 
                         </td>
                         <td>
-                            Agregar o mejorar las características se vuelve más complejo a medida que crece la base del
-                            código
-                        </td>
-                    </tr>
- 
-                    <tr>
-                        <td>
-                            Más fáciles de testear, ya que hay solo un repositorio de código
-                        </td>
-                        <td>
-                            Aumentan el riesgo de la disponibilidad de la aplicación porque muchos procesos dependientes
-                            y estrechamente vinculados aumentan el impacto del error de un proceso
+                            <p class="text-start fs-5  fw-normal">Agregar o mejorar las características se vuelve más complejo a medida que crece la base del
+                            código</p>
                         </td>
                     </tr>
  
                     <tr>
                         <td>
-                            No se requieren, o se requieren menos habilidades especializadas
+                            <p class="text-start fs-5  fw-normal">Más fáciles de testear, ya que hay solo un repositorio de código</p>
                         </td>
                         <td>
-                            Difícil de escalar, ya que para escalar una aplicación monolítica, esto debe hacerse todo a
-                            la vez añadiendo recursos de cómputo adicionales, lo cual es caro
+                            <p class="text-start fs-5  fw-normal">Aumentan el riesgo de la disponibilidad de la aplicación porque muchos procesos dependientes
+                            y estrechamente vinculados aumentan el impacto del error de un proceso</p>
+                        </td>
+                    </tr>
+ 
+                    <tr>
+                        <td>
+                            <p class="text-start fs-5  fw-normal">No se requieren, o se requieren menos habilidades especializadas</p>
+                        </td>
+                        <td>
+                            <p class="text-start fs-5  fw-normal">Difícil de escalar, ya que para escalar una aplicación monolítica, esto debe hacerse todo a
+                            la vez añadiendo recursos de cómputo adicionales, lo cual es caro</p>
                         </td>
                     </tr>
                 </table>
@@ -104,13 +104,14 @@
         </div>
         <div class="blog-post">
             <center>
-                <h2 class="title">Arquitectura de microservicios</h2>
+                <h2 class="title"><b> Arquitectura  de </b> <b class="text-success"> Microservicios </b></h2>
                 <p class="text-start fs-5  fw-normal">Una arquitectura de microservicios corresponde a una arquitectura
                     donde la aplicación se crea con componentes independientes que ejecutan cada proceso de la
                     aplicación como un servicio, los que se comunican a través de una interfaz bien definida mediante
                     APIs ligeras.</p>
-                <img src="https://taazaa.com/wp-content/uploads/2021/06/microser4vices-1536x864-1.webp"
-                                    alt="alternate text" style="width: 100%;" class="p-3">    
+                <center>    
+                    <img src="https://taazaa.com/wp-content/uploads/2021/06/microser4vices-1536x864-1.webp"alt="alternate text" style="width: 100%;" class="p-3">    
+                </center>
                 <p class="text-start fs-5  fw-normal">Los microservicios son autónomos, es decir, cada servicio
                     componente en una arquitectura de microservicios se puede desarrollar, implementar, operar y escalar
                     sin afectar el funcionamiento de otros servicios, sin tener que compartir código o implementaciones
@@ -118,53 +119,55 @@
                     capacidades y se enfoca en resolver un problema específico, y si el servicio se vuelve más complejo,
                     se puede dividir en servicios más pequeños.</p>
  
-                <h4 class="text-dark p-3">Ventajas y desventajas de la arquitectura</h4>
+                <h2 class="text-dark p-3"><b class="text-success">Ventajas</b> y <b class="text-danger">Desventajas</b> de la arquitectura</h2>
                 <table class="table table-striped  bg-white rounded">
                     <tr>
                         <td>
-                            Ventajas ✅
+                            <p class="text-center fs-5  fw-normal text-success">Ventajas ✅</p>
                         </td>
                         <td>
-                            Desventajas ❌
+                            <p class="text-center fs-5  fw-normal text-danger">Desventajas ❌</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            Debido a que se ejecutan de forma independiente, cada servicio se puede actualizar,
-                            implementar y escalar para satisfacer la demanda de funciones de la aplicación.
+                            <p class="text-start fs-5  fw-normal">Debido a que se ejecutan de forma independiente, cada servicio se puede actualizar,
+                            implementar y escalar para satisfacer la demanda de funciones de la aplicación.</p>
                         </td>
                         <td>
-                            La complejidad es más alta, debido a la manera en que los microservicios están conectados
-                            entre sí.
-                        </td>
-                    </tr>
- 
-                    <tr>
-                        <td>
-                            Los equipos pueden fácilmente añadir funcionalidades y nuevas tecnologías a una arquitectura
-                            de microservicios a medida que se necesite.
-                        </td>
-                        <td>
-                            Requiere habilidades y conocimientos especializados, los que no todos los desarrolladores
-                            poseen.
+                            <p class="text-start fs-5  fw-normal">La complejidad es más alta, debido a la manera en que los microservicios están conectados
+                            entre sí.</p>
                         </td>
                     </tr>
  
                     <tr>
                         <td>
+                            <p class="text-start fs-5  fw-normal">Los equipos pueden fácilmente añadir funcionalidades y nuevas tecnologías a una arquitectura
+                            de microservicios a medida que se necesite.</p>
+                        </td>
+                        <td>
+                            <p class="text-start fs-5  fw-normal">Requiere habilidades y conocimientos especializados, los que no todos los desarrolladores
+                            poseen.</p>
+                        </td>
+                    </tr>
+ 
+                    <tr>
+                        <td>
  
                         </td>
                         <td>
-                            La seguridad y el testeo están distribuidos, ya que cada módulo tiene sus propias
-                            vulnerabilidades y bugs, lo cual toma más tiempo de debuggear.
+                            <p class="text-start fs-5  fw-normal">La seguridad y el testeo están distribuidos, ya que cada módulo tiene sus propias
+                            vulnerabilidades y bugs, lo cual toma más tiempo de debuggear.</p>
                         </td>
                     </tr>
                 </table>
             </center>
         </div>
-        <div class="blog-post">
-            <a class="btn btn-danger" href="page2.html">¿Qué es un microservicio?</a>
-            <a class="btn btn-success" href="page4.html">Transacciones</a>   
+        <div >
+            <center>
+                <a  class="btn text-light" href="page2.html"><i class="arrow left "> </i>Microservicio</a>
+                <a class="btn text-light" href="page4.html">Desafíos<i class="arrow right"></i></a>
+            </center>   
         </div>  
     </div>
     <div class="loading">
