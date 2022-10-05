@@ -144,6 +144,7 @@ body {
         display: none;
     }
 }
+
 .arrow {
 	border: solid white;
 	border-width: 0 3px 3px 0;
@@ -160,3 +161,4 @@ body {
 	transform: rotate(135deg);
 	-webkit-transform: rotate(135deg);
 }
+

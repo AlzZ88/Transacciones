@@ -24,7 +24,7 @@
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="page1.html">Introducción</a>
+                            <a class="nav-link" href="page1.html">Conceptos previos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="page2.html">Microservicios</a>
@@ -37,45 +37,54 @@
                         </li>
                         
                         <li class="nav-item">
-                            <a class="nav-link" href="page7.html">Patrones</a>
+                            <a class="nav-link" href="page7.html">Patrones de microservicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="page8.html">Bibliografía</a>
+                            <a class="nav-link" href="page8.html">Linkografía</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
+    <center><h1 class="title"style="padding-top: 10px;" ><b class="text-light" > Desafíos </b></h1></center>
+    
+    <div class="blog-post">
+        <center>
+            <h2 class="title"> <b> ¿Cómo definir los <b class="text-danger"> límites</b> de cada microservicio?</b></h2>
+        </center>
+        <p class=" fs-5  fw-normal" align="justify" >Cada microservicio debe <b class="text-success"> formar parte</b> de la aplicación y a la vez <b class="text-danger"> ser autónomo</b> con todas las ventajas y los desafíos que eso conlleva, ¿Cómo podemos identificar estos límites?.</p> 
+        
+        <p class=" fs-5  fw-normal"align="justify"  >El objetivo al identificar los límites del modelo y el <b  class="text-primary"> tamaño </b> de cada microservicio no es llegar a la separación más específica posible, sino que debería ser llegar a la separación más <b> significativa </b> basada en el conocimiento del dominio. La idea es que cada microservicio sea lo más <b>  aislado posible </b>, que este permita trabajar sin tener que estar solicitando recursos de otros microservicios (en lo posible).</p>
+        
+        <img src="https://www.connell.dev/images/diagrams/bounded-contexts.png" alt="" style="width: 100%; height: 80%;" class="p-3">
+
+
+         </div>
 
     <div class="blog-post">
-        <h2 class="title">Desafío n.º 1:  cómo definir los límites de cada microservicio </h2>
+        <center>
+            <h2 class="title"> <b> ¿Cómo crear consultas que <b class="text-primary"> recuperen</b> datos de varios microservicios?</b></h2>
+        </center>
         
-        <p class="text-start fs-5  fw-normal"  >Cada microservicio debe formar parte de la aplicación y a la vez ser autónomo con todas las ventajas y los desafíos que eso conlleva, ¿Cómo podemos identificar estos límites?.</p> 
-        
-        <p class="text-start fs-5  fw-normal"  >El objetivo al identificar los límites del modelo y el tamaño de cada microservicio no es llegar a la separación más específica posible, sino que debería ser llegar a la separación más significativa basada en el conocimiento del dominio. La idea es que cada microservicio sea lo mas aislado posible, que este permita trabajar sin tener que estar solicitando recursos de otros microservicios (en lo posible).</p>
-        
-        <img src="https://learn.microsoft.com/es-es/dotnet/architecture/microservices/architect-microservice-container-applications/media/identify-microservice-domain-model-boundaries/identify-entities-microservice-model-boundries.png" alt="" style="width: 100%; height: 80%;" class="p-3">
-
-
-        <h2 class="title"> Desafío n.º 2: cómo crear consultas que recuperen datos de varios microservicios</h2>
-        
-        <p class="text-start fs-5  fw-normal"  > Un segundo desafío es implementar consultas que recuperen datos de varios microservicios, evitando al mismo tiempo un exceso de comunicación entre los microservicios y las aplicaciones cliente remotas. Si la aplicación llega a tener muchos microservicios, administrar tantos puntos de conexión desde las apps clientes puede ser	 un caos. Las soluciones más comunes son las siguientes:</p>
-       
-        <p class="text-start fs-5  fw-normal"  >Puerta de enlace de API. Se trata de un nivel intermedio que actúa como punto de entrada único para un grupo de microservicios. No es buena idea tener una sola API que sirva como puerta para todos los microservicios, ya que se estaría replicando el comportamiento de una aplicación monolítica, por el contrario, conviene agrupar los microservicios en varias API dependiendo del propósito.</p>
+        <p class=" fs-5  fw-normal" align="justify" > Un segundo desafío es implementar consultas que recuperen datos de varios microservicios, <b> evitando </b> al mismo tiempo un <b class="text-danger"> exceso de comunicación </b> entre los microservicios y las aplicaciones cliente remotas. Si la aplicación llega a tener <b>muchos microservicios</b>, administrar tantos puntos de conexión desde las apps clientes puede ser <b class="text-danger">un caos</b>. Las soluciones más comunes son las siguientes:</p>
         
         <img src="https://learn.microsoft.com/es-es/dotnet/architecture/microservices/architect-microservice-container-applications/media/direct-client-to-microservice-communication-versus-the-api-gateway-pattern/multiple-custom-api-gateways.png" alt="" style="width: 100%; height: 80%;" class="p-3">
 
-        <p class="text-start fs-5  fw-normal"  >Patrón de vista materializada: Útil en aquellos casos en que la información que se requiere no se encuentra en un formato adecuado para ser visualizado o cuando resulta difícil generar o esperar  la respuesta de una consulta. Se trata de tener previamente generadas tablas con los datos de las consultas mas frecuentes para ahorrar tiempo.</p>
+        <p class=" fs-5  fw-normal" align="justify" ><b> Puerta de enlace de API:</b> Se trata de un nivel intermedio que actúa como <b> punto de entrada único</b> para un grupo de microservicios. No es buena idea tener una sola API que sirva como puerta para todos los microservicios, ya que se estaría replicando el comportamiento de una aplicación monolítica, por el contrario, conviene <b class="text-primary"> agrupar los microservicios</b> en varias API <b> dependiendo del propósito</b>.</p>
         
         <img src="https://learn.microsoft.com/es-es/azure/architecture/patterns/_images/materialized-view-pattern-diagram.png" alt="" style="width: 100%; height: 80%;" class="p-3">
+        
+        <p class=" fs-5  fw-normal" align="justify" ><b> Patrón de vista materializada</b>: Útil en aquellos casos en que la información que se requiere no se encuentra en un formato adecuado para ser visualizado o cuando resulta difícil generar o esperar  la respuesta de una consulta. Se trata de tener <b> previamente</b> generadas tablas con los datos de las consultas más <b> frecuentes</b> para ahorrar tiempo.</p>
+        
+         
     </div>
 
-
-    <div class="blog-post">
-
-        <a class="btn btn-danger" href="page4.html">Transacciones</a>
-        <a class="btn btn-success" href="page6.html">Donde se ejecuta un microservicio</a>
+    <div>
+        <center>
+            <a  class="btn text-light" href="page3.html"><i class="arrow left "> </i>Arquitecturas</a>
+            <a class="btn text-light" href="page7.html">Patrones<i class="arrow right"></i></a>
+        </center>   
     </div>
 
     

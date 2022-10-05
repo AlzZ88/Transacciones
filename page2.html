@@ -24,7 +24,7 @@
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="page1.html">Introducción</a>
+                            <a class="nav-link" href="page1.html">Conceptos previos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="page2.html">Microservicios</a>
@@ -37,10 +37,10 @@
                         </li>
                         
                         <li class="nav-item">
-                            <a class="nav-link" href="page7.html">Patrones</a>
+                            <a class="nav-link" href="page7.html">Patrones de microservicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="page8.html">Bibliografía</a>
+                            <a class="nav-link" href="page8.html">Linkografía</a>
                         </li>
                     </ul>
                 </div>
@@ -48,50 +48,43 @@
         </div>
     </header>
 
-
+    <center><h1 class="title"style="padding-top: 10px;" ><b class="text-light" > Microservicios </b></h1></center>
+    
     <div class="container" id="container">
         <div class="blog-post">
-            <center><h2 class="title"><b>¿Qué es un microservicio?</b> </h4></center>
-            
-            
-            <p>Un microservicio se define como: "un repositorio de código pequeño, autónomo y desplegado independientemente de los demás". Se desarrollan y diseñan en base a una capacidad de negocio concreta y pueden ser vistos como una aplicación independiente del resto de microservicios, aun cuando coexistan para la implementación del sistema completo.</p>
-            
-            <img src="https://www.panamaxil.com/es/wp-content/uploads/2021/04/01-Micro-Service-Diagram-Spanish.jpg" alt="" style="width: 100%; height: 80%;" class="p-3">
+            <center><h2 class="title"><b>Caracteristicas de un <b class="text-primary"> Microservicio</b></b> </h4></center>
+                
 
-            <p>Como características principales de los microservicios se destacan: </p>
             
+            <p class=" fs-5  fw-normal" align="justify"> Los microservicios son tanto un <b> estilo de arquitectura </b> como un modo de programar software, en donde aplicaciones se <b class="text-danger"> dividen </b> en sus elementos más pequeños e independientes entre sí. A diferencia del enfoque tradicional y monolítico de las aplicaciones, en el que todo se compila en una sola pieza, los microservicios son elementos <b> independientes </b> que funcionan en conjunto para llevar a cabo las mismas tareas. Cada uno de esos elementos o procesos es un microservicio.</p>
+            
+            <img src="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2018/03/Microservice-Architecture-Of-Use-Case-Microservices-Tutorial-Edureka.png" alt="" style="width: 100%; height: 80%;" class="p-3">
+
+            <p class=" fs-5  fw-normal" align="justify">Las arquitecturas de microservicios hacen que las aplicaciones sean más <b class="text-success"> fáciles de escalar</b> y más rápidas de desarrollar, si una parte de la aplicación requiere más recursos, en vez de escalar toda la aplicación, escalamos solamente el servicio que los requiere.  </p>
+            
+        
+            
+            <p class=" fs-5  fw-normal" align="justify">Al mismo tiempo, ya que cada servicio es un <b class="text-success"> código más pequeño y aislado</b>, nos permite la mejor detección de errores. </p>
+            
+            <p class="text-start fs-5  fw-normal">Por otro lado, algunos de los problemas que surgen son:</p>
             <ul>
-                <li>Se desarrollan en base a una capacidad de negocio concreta</li>
-                <li>Deben ser tratados como una “caja negra”, ya que conocer su implementación no es requerido por ningún servicio externo.</li>
-                <li>Encargados de una única funcionalidad concreta. </li>
-                <li>Exponen dicha funcionalidad mediante uno o más endpoints pero abstrayendo totalmente a agentes externos de la implementación concreta. </li>
-                <li>Límites claros entre los distintos servicios, que permite lograr independencia con respecto a la implementación concreta de cada servicio, lo que deriva en menor acoplamiento y mayor cohesión. </li>
-                <li>Independientes, al ocultar su implementación y solo comunicarse a través de una interfaz son capaces de ser mantenidos, desplegados, desarrollados y probados de manera independiente.</li>
-                <li>Un único equipo reducido de programadores puede escribir y mantener un servicio. </li>
-                <li>No es necesario que los servicios compartan el mismo stack tecnológico, las librerías o los frameworks.</li>
+                <li class="text-start fs-5  fw-normal">La complejidad de la aplicación al tener varias <b class="text-danger"> partes en movimiento</b> al mismo tiempo.</li>
+                <li class="text-start fs-5  fw-normal"><b class="text-danger">Falta de control</b> de cada equipo, ya que pueden utilizar distintas herramientas para realizar sus tareas.</li>
+                <li class="text-start fs-5  fw-normal">He incluso puede haber <b class="text-danger">congestión</b> de redes si los servicios realizan muchas <b>conexiones</b> hacia las API.</li>
             </ul>
             
-            <p>Los microservicios son tanto un estilo de arquitectura como un modo de programar software. Con los microservicios, las aplicaciones se dividen en sus elementos más pequeños e independientes entre sí. A diferencia del enfoque tradicional y monolítico de las aplicaciones, en el que todo se compila en una sola pieza, los microservicios son elementos independientes que funcionan en conjunto para llevar a cabo las mismas tareas. Cada uno de esos elementos o procesos es un microservicio.</p>
             
-            <p>Una “arquitectura de microservicios” es un enfoque para desarrollar una aplicación software como una serie de pequeños servicios, cada uno ejecutándose de forma autónoma y comunicándose entre sí, por ejemplo, a través de peticiones HTTP a sus API.</p>
-            
-            <p>Normalmente hay un número mínimo de servicios que gestionan cosas comunes para los demás (como el acceso a base de datos), pero cada microservicio es pequeño y corresponde a un área de negocio de la aplicación.</p>
-            
-            <p>Además, cada uno es independiente y su código debe poder ser desplegado sin afectar a los demás. Incluso cada uno de ellos puede escribirse en un lenguaje de programación diferente, ya que solo exponen la API (una interfaz común, a la que le da igual el lenguaje de programación en la que el microservicio esté programado por debajo) al resto de microservicios. </p>
-            
-            <p>No hay reglas sobre qué tamaño debe tener cada microservicio, ni sobre cómo dividir la aplicación en microservicios, pero algunos autores como Jon Eaves caracterizan un microservicio como algo que a nivel de código podría ser reescrito en dos semanas. </p>
-            
-            <a class="btn btn-danger" href="page1.html">Introduccion</a>
-            <a class="btn btn-success" href="page3.html">Microservicio vs monolítico</a>
-        
             
         
         </div>
+    </div>
+    
 
-        
-         
-        
-
+    <div >
+        <center>
+            <a  class="btn text-light" href="page1.html"><i class="arrow left "> </i>Introducción</a>
+            <a class="btn text-light" href="page3.html">Arquitecturas<i class="arrow right"></i></a>
+        </center>   
     </div>
     
     <div class="loading">

@@ -24,7 +24,7 @@
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="page1.html">Introducción</a>
+                            <a class="nav-link" href="page1.html">Conceptos previos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="page2.html">Microservicios</a>
@@ -37,22 +37,23 @@
                         </li>
                         
                         <li class="nav-item">
-                            <a class="nav-link" href="page7.html">Patrones</a>
+                            <a class="nav-link" href="page7.html">Patrones de microservicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="page8.html">Bibliografía</a>
+                            <a class="nav-link" href="page8.html">Linkografía</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
-
+    <center><h1 class="title"style="padding-top: 10px;" ><b class="text-light" > Conceptos Previos </b></h1></center>
     <div class="container" id="container">
         <div class="blog-post">
             <center>
-                <h2 class="title">¿Qué son las Transacciones?</h2>  
-                <p class="text-start fs-5  fw-normal"  >Corresponden a una serie de acciones que deben ejecutarse exitosamente en una base de datos. Si una  de las operaciones falla, todos los pasos deben retroceder a su estado anterior para que la aplicación quede en su estado estable antiguo.</p>
+                <h2 class="title"> <b> ¿Qué son las <b class="text-primary"> Transacciones</b>?</b></h2>
+
+                <p class=" fs-5  fw-normal" align="justify" >Corresponden a una <b class="text-success"> serie de acciones </b> que deben ejecutarse exitosamente en una base de datos. Si una  de las operaciones <b class=" text-danger"> falla</b>, todos los pasos deben retroceder a su estado anterior para que la aplicación quede en su estado estable antiguo.</p>
               
                 
                 <img src="http://www.oscarblancarteblog.com/wp-content/uploads/2014/09/twocommitsimplefail.png" alt="alternate text"style="width: 60%; height: 60%;" class="p-3">
@@ -60,34 +61,42 @@
                 
                 <p class="text-start fs-5  fw-normal"  >Las transacciones poseen las siguientes propiedades:</p>
                 <ul>
-                    <li class="text-start fs-5  fw-normal">Atomicidad: La transacción ocurre completamente o no ocurre.</i>
-                    <li class="text-start fs-5  fw-normal">Consistencia: La base de datos debe ser consistente (es decir, el cambio solo ocurre si el nuevo estado es válido) antes y después de la transacción.</i>
-                    <li class="text-start fs-5  fw-normal">Ocurren múltiples transacciones independientemente sin interferencia.</i>
-                    <li class="text-start fs-5  fw-normal">Durabilidad: Los cambios de una transacción exitosa ocurren incluso si el sistema falla.</i>
+                    <li class="text-start fs-5  fw-normal"><b>Atomicidad:</b>  La transacción ocurre completamente o no ocurre.</i>
+                    <li class="text-start fs-5  fw-normal"><b>Consistencia:</b>  La base de datos debe ser consistente (es decir, el cambio solo ocurre si el nuevo estado es válido) antes y después de la transacción.</i>
+                    <li class="text-start fs-5  fw-normal"><b>Aislamiento:</b>  Ocurren múltiples transacciones independientemente sin interferencia.</i>
+                    <li class="text-start fs-5  fw-normal"><b>Durabilidad:</b>  Los cambios de una transacción exitosa ocurren incluso si el sistema falla.</i>
                 </ul>
-                <p class="text-start fs-5  fw-normal" >Dentro de una transacción, un evento es un cambio de estado que le ocurre a una entidad, y un comando encapsula toda la información necesaria para ejecutar una acción o gatillar un evento futuro.</p>
+                <p class=" fs-5  fw-normal" align="justify" >Dentro de una transacción, un evento es un cambio de estado que le ocurre a una entidad, y un comando encapsula toda la información necesaria para ejecutar una acción o gatillar un evento futuro.</p>
             </center>
         </div>
         <div class="blog-post">
             <center>
-                <h2 class="title">¿Qué son las Api?</h2>  
-                <p class="text-start fs-5  fw-normal"  >API (Application Programming Interface), son un conjunto de funciones y procedimientos que permiten a dos softwares los cuales pueden estar programados en lenguajes diferentes, comunicarse entre sí.</p>
+                
+                <h2 class="title"> <b> ¿Qué son las <b class="text-danger"> Api</b>?</b></h2>
+
+                <p class="fs-5  fw-normal" align="justify" >API (Application Programming Interface), son un <b class="text-warning"> conjunto de funciones</b> y procedimientos que permiten a dos softwares los cuales pueden estar programados en lenguajes diferentes, <b class="text-success"> comunicarse</b> entre sí.</p>
               
                 
-                <img src="https://kozub.com.ar/wp-content/uploads/2021/01/What-is-an-API.png" alt="alternate text" style="width: 60%; height: 60%;" class="p-3">
+                <img src="https://www.manutan.com/blog/medias/file_bank/Images/2019/12_D%C3%A9cembre/thumbs/863_Infographie-API-restaurant-EN-800-100.jpg" alt="alternate text" style="width: 80%; height: 80%;" class="p-3">
                 
                 
-                <p class="text-start fs-5  fw-normal"  >Para entender cómo funciona una API, pongamos un ejemplo del mundo real. Un cliente en un restaurante llama al mesero y le indica su orden, el mesero va a la cocina y transcurridos unos minutos, el cliente recibe los platillos que solicitó. En este ejemplo el cliente no tiene interés en lo que ocurre en la cocina o en la preparación específica de cada plato, sólo en recibir la comida que ordenó. Por otro lado, el mesero sería la API, un intermediario entre el cliente y los cocineros.</p>
+                <p class="text-start fs-5  fw-normal"  >Para entender cómo funciona una API, pongamos un ejemplo del mundo real:</p> 
+                
+                <p class=" fs-5  fst-italic" align="justify"  ><b> "Un cliente en un restaurante llama al mesero y le indica su orden, el mesero va a la cocina y transcurridos unos minutos, el cliente recibe los platillos que solicitó. En este ejemplo el cliente no tiene interés en lo que ocurre en la cocina o en la preparación específica de cada plato, sólo en recibir la comida que ordenó. Por otro lado, el mesero sería la API, un intermediario entre el cliente y los cocineros".</b></p>
                 
                 
-                <p class="text-start fs-5  fw-normal">De manera similar, cuando una primera aplicación (o página web) solicita datos a una segunda aplicación, no es necesario que la primera conozca la manera en que se procesa su consulta, solo necesita obtener los datos que solicito. </p>
+                <p class="fs-5  fw-normal " align="justify">De manera similar, cuando una primera aplicación (o página web) solicita datos a una segunda aplicación, <b class="text-danger"> no es necesario </b> que la primera <b class="text-success"> conozca</b> la manera en que se procesa su consulta, solo necesita obtener los datos que solicito. </p>
                 
-                <p class="text-start fs-5  fw-normal">
-                    <p class="text-start fs-5  fw-normal">Usualmente las comunicaciones entre aplicaciones que utilizan API’s se establecen entre un <b>cliente</b>  y un <b>servidor </b> , a través de un protocolo (SOAP, REST, GraphQL), en donde las operaciones básicas permitidas son  <b>Create</b>,  <b>Read</b>,  <b>Update</b>,  <b>Delete</b> (CRUD). </p></p>
+                <p class=" fs-5  fw-normal" align="justify">Usualmente las comunicaciones entre aplicaciones que utilizan API’s se establecen entre un <b>cliente</b>  y un <b>servidor </b> , a través de un protocolo (SOAP, REST, GraphQL), en donde las operaciones básicas permitidas son  <b>Create</b>,  <b>Read</b>,  <b>Update</b>,  <b>Delete</b> (CRUD). </p>
             </center>
         </div>  
     </div>
-
+    <div >
+        <center>
+            <a  class="btn text-light" href="index.html"><i class="arrow left "> </i>Home</a>
+            <a class="btn text-light" href="page2.html">Microservicios<i class="arrow right"></i></a>
+        </center>   
+    </div>
          
         
 
