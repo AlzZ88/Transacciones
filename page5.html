@@ -13,7 +13,7 @@
     <header >
         <div class="container-fluid px-0">
             <nav class="navbar navbar-expand-sm navbar-dark bg-black py-0 px-0">
-                <a class="navbar-brand" href="#"><img id="logo" src="https://fi.udec.cl/wp-content/themes/divi-child/img/udec.png"> &nbsp;</a>
+                <a class="navbar-brand" href="index.html"><img id="logo" src="https://normasgraficas.udec.cl/sites/default/files/escudoof.gif"> &nbsp;</a>
                 <span class="v-line"></span>
                 <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -49,12 +49,34 @@
     </header>
 
     <div class="blog-post">
-        <a class="btn btn-danger" href="page4.html">Transacciones</a>
-        <a class="btn btn-success" href="page6.html">Donde se ejecuta un microservicio</a>
+        <h2 class="title">Desafío n.º 1:  cómo definir los límites de cada microservicio </h2>
+        
+        <p class="text-start fs-5  fw-normal"  >Cada microservicio debe formar parte de la aplicación y a la vez ser autónomo con todas las ventajas y los desafíos que eso conlleva, ¿Cómo podemos identificar estos límites?.</p> 
+        
+        <p class="text-start fs-5  fw-normal"  >El objetivo al identificar los límites del modelo y el tamaño de cada microservicio no es llegar a la separación más específica posible, sino que debería ser llegar a la separación más significativa basada en el conocimiento del dominio. La idea es que cada microservicio sea lo mas aislado posible, que este permita trabajar sin tener que estar solicitando recursos de otros microservicios (en lo posible).</p>
+        
+        <img src="https://learn.microsoft.com/es-es/dotnet/architecture/microservices/architect-microservice-container-applications/media/identify-microservice-domain-model-boundaries/identify-entities-microservice-model-boundries.png" alt="" style="width: 100%; height: 80%;" class="p-3">
+
+
+        <h2 class="title"> Desafío n.º 2: cómo crear consultas que recuperen datos de varios microservicios</h2>
+        
+        <p class="text-start fs-5  fw-normal"  > Un segundo desafío es implementar consultas que recuperen datos de varios microservicios, evitando al mismo tiempo un exceso de comunicación entre los microservicios y las aplicaciones cliente remotas. Si la aplicación llega a tener muchos microservicios, administrar tantos puntos de conexión desde las apps clientes puede ser	 un caos. Las soluciones más comunes son las siguientes:</p>
+       
+        <p class="text-start fs-5  fw-normal"  >Puerta de enlace de API. Se trata de un nivel intermedio que actúa como punto de entrada único para un grupo de microservicios. No es buena idea tener una sola API que sirva como puerta para todos los microservicios, ya que se estaría replicando el comportamiento de una aplicación monolítica, por el contrario, conviene agrupar los microservicios en varias API dependiendo del propósito.</p>
+        
+        <img src="https://learn.microsoft.com/es-es/dotnet/architecture/microservices/architect-microservice-container-applications/media/direct-client-to-microservice-communication-versus-the-api-gateway-pattern/multiple-custom-api-gateways.png" alt="" style="width: 100%; height: 80%;" class="p-3">
+
+        <p class="text-start fs-5  fw-normal"  >Patrón de vista materializada: Útil en aquellos casos en que la información que se requiere no se encuentra en un formato adecuado para ser visualizado o cuando resulta difícil generar o esperar  la respuesta de una consulta. Se trata de tener previamente generadas tablas con los datos de las consultas mas frecuentes para ahorrar tiempo.</p>
+        
+        <img src="https://learn.microsoft.com/es-es/azure/architecture/patterns/_images/materialized-view-pattern-diagram.png" alt="" style="width: 100%; height: 80%;" class="p-3">
     </div>
 
 
+    <div class="blog-post">
 
+        <a class="btn btn-danger" href="page4.html">Transacciones</a>
+        <a class="btn btn-success" href="page6.html">Donde se ejecuta un microservicio</a>
+    </div>
 
     
     <div class="loading">
